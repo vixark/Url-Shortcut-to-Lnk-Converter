@@ -28,12 +28,13 @@
             this.TxtDirectorioAccesosDirectos = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ChkUseCustomIcons = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // BtnConvertir
             // 
             this.BtnConvertir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnConvertir.Location = new System.Drawing.Point(674, 191);
+            this.BtnConvertir.Location = new System.Drawing.Point(779, 220);
             this.BtnConvertir.Margin = new System.Windows.Forms.Padding(20);
             this.BtnConvertir.Name = "BtnConvertir";
             this.BtnConvertir.Size = new System.Drawing.Size(131, 47);
@@ -46,10 +47,10 @@
             // 
             this.TxtDirectorioÍconos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtDirectorioÍconos.Location = new System.Drawing.Point(297, 110);
+            this.TxtDirectorioÍconos.Location = new System.Drawing.Point(341, 155);
             this.TxtDirectorioÍconos.Margin = new System.Windows.Forms.Padding(20);
             this.TxtDirectorioÍconos.Name = "TxtDirectorioÍconos";
-            this.TxtDirectorioÍconos.Size = new System.Drawing.Size(508, 40);
+            this.TxtDirectorioÍconos.Size = new System.Drawing.Size(569, 40);
             this.TxtDirectorioÍconos.TabIndex = 1;
             this.TxtDirectorioÍconos.Text = "D:\\Juegos\\Íconos";
             // 
@@ -57,17 +58,17 @@
             // 
             this.TxtDirectorioAccesosDirectos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtDirectorioAccesosDirectos.Location = new System.Drawing.Point(297, 30);
+            this.TxtDirectorioAccesosDirectos.Location = new System.Drawing.Point(341, 30);
             this.TxtDirectorioAccesosDirectos.Margin = new System.Windows.Forms.Padding(20);
             this.TxtDirectorioAccesosDirectos.Name = "TxtDirectorioAccesosDirectos";
-            this.TxtDirectorioAccesosDirectos.Size = new System.Drawing.Size(508, 40);
+            this.TxtDirectorioAccesosDirectos.Size = new System.Drawing.Size(569, 40);
             this.TxtDirectorioAccesosDirectos.TabIndex = 2;
             this.TxtDirectorioAccesosDirectos.Text = "D:\\Juegos\\Accesos Directos";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 33);
+            this.label1.Location = new System.Drawing.Point(74, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 35);
@@ -77,18 +78,31 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 113);
+            this.label2.Location = new System.Drawing.Point(21, 158);
             this.label2.Margin = new System.Windows.Forms.Padding(20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 35);
+            this.label2.Size = new System.Drawing.Size(280, 35);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Icons Directory";
+            this.label2.Text = "Custom Icons Directory";
+            // 
+            // ChkUseCustomIcons
+            // 
+            this.ChkUseCustomIcons.AutoSize = true;
+            this.ChkUseCustomIcons.Checked = true;
+            this.ChkUseCustomIcons.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ChkUseCustomIcons.Location = new System.Drawing.Point(341, 93);
+            this.ChkUseCustomIcons.Name = "ChkUseCustomIcons";
+            this.ChkUseCustomIcons.Size = new System.Drawing.Size(239, 39);
+            this.ChkUseCustomIcons.TabIndex = 5;
+            this.ChkUseCustomIcons.Text = "Use Custom Icons";
+            this.ChkUseCustomIcons.UseVisualStyleBackColor = true;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 268);
+            this.ClientSize = new System.Drawing.Size(940, 297);
+            this.Controls.Add(this.ChkUseCustomIcons);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtDirectorioAccesosDirectos);
@@ -112,6 +126,7 @@
         private System.Windows.Forms.TextBox TxtDirectorioAccesosDirectos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox ChkUseCustomIcons;
     }
 }
 

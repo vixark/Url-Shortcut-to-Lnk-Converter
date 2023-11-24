@@ -38,16 +38,21 @@ namespace Url_Shortcut_to_Lnk_Converter {
                 if (extensión == ".url") {
 
                     var rutaObjetivo = "";
+                    var rutaÍconoOriginal = "";
                     var nombreSinExtensión = Path.GetFileNameWithoutExtension(rutaArchivo);
                     foreach (var línea in System.IO.File.ReadAllLines(rutaArchivo)) {
+
                         if (línea.StartsWith("URL=")) {
                             rutaObjetivo = línea.Replace("URL=", "");
+                        } else if (línea.StartsWith("IconFile=")) {
+                            rutaÍconoOriginal = línea.Replace("IconFile=", "");
                         }
+
                     }
 
                     if (!string.IsNullOrEmpty(rutaObjetivo)) {
 
-                        var rutaÍcono = Path.Combine(TxtDirectorioÍconos.Text, $"{nombreSinExtensión}.ico");
+                        var rutaÍcono = ChkUseCustomIcons.Checked ? Path.Combine(TxtDirectorioÍconos.Text, $"{nombreSinExtensión}.ico") : rutaÍconoOriginal;
                         var rutaLnk = Path.Combine(TxtDirectorioAccesosDirectos.Text, $"{nombreSinExtensión}.lnk");
 
                         if (System.IO.File.Exists(rutaÍcono)) {
